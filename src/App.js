@@ -1,5 +1,7 @@
+import Body from "./components/Body";
+
 function App() {
-  return <div className="">lelelelelelellelelelelelelele</div>;
+  return <Body />;
 }
 
 export default App;
