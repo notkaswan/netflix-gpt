@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BODY_BG } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -92,11 +93,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute h-screen w-full bg-red-700">
-        <img
-          className="w-full h-full object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/05e91faa-6f6d-4325-934e-5418dcc2567b/web/IN-en-20250630-TRIFECTA-perspective_159086b1-425f-435b-bcd5-1ed8039cdef9_large.jpg"
-          alt="body"
-        />
+        <img className="w-full h-full object-cover" src={BODY_BG} alt="body" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
